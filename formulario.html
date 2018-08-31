@@ -1,0 +1,39 @@
+<!DOCTYPE hmtl>
+<html>
+
+  <head>
+     <!-- para padronizar a linguagem e usar uma só-->
+	  <meta charset="utf-8">
+	   <title>Formulário</title>
+		<script src="js/formulario.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/size.css">
+   </head>
+   <body>
+    <!--br é usado para pular linha-->
+	 <div id= "form">
+	  <p>Formulário</p><br>
+	   <form action="">
+	     Nome:<br><input type="text" name="Nome" value="" size="35" pattern="[a-z/s]+$" required="yes"><br>
+		 Sobrenome:<br><input type="text" name="Sobrenome" size="35" value="" required="yes" pattern="[a-z/s]+$"><br>
+		 Sexo:<br>Masculino<input type="radio" name="sexo" value="Masculino"> Feminino<input type="radio" name="sexo" value="Feminino" required="yes"><br><br>
+		<!-- select organiza as informações do option -->
+		Qual o ano do seu nascimento?<br>
+		<input type="button" id="btnCarregar" onclick="ano()"size="35" value="Data" required="yes"><br>
+		<select name="data_nasc" id="data_nasc">
+		</select><br>
+       <!-- as funcionalidades estão dentro do type -->
+	   Qual a data do seu aniversario?<br>
+		<input type="date" name="data_aniversario"><br>
+		Assinale os itens de maior consumo:<br>
+		<input type="checkbox" name="chocolate" value="chocolate">Chocolate<br>
+		<input type="checkbox" name="refrigerante" value="refrigerante">Refrigerante<br>
+        Digite o seu email:<br>
+		<input type="email" size="35" name="email"><br>
+	  Digite uma mensagem!!:<br>
+		<textarea name="message" rows="10" cols="30"></textarea><br><br>
+		 <input type="submit" value="Enviar">
+		 
+		</form>
+		</div>
+	</body>
+</html>	

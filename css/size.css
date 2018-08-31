@@ -1,0 +1,21 @@
+body {
+ font-family:arial;
+ font-size:12pt;
+ font-style: italic;
+ color: red;
+ 
+}
+ input , select {
+	 margin-top:5px;
+	 margin-bottom:10px;
+	 
+	 
+ }
+ 
+ p {
+	 font-size:25pt;
+	 font-family:times new roman;
+	 margin-bottom:10px;
+	 background-color: white;
+	 border: 5px solid black;
+ }
